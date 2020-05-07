@@ -15,6 +15,7 @@ def extract_name_from_document_url(url):
 def collect_geojson(name, endpoint, filename):
     print(f"Collect: {name}\nfrom: {endpoint}")
     d = fetch_json_from_endpoint(endpoint)
+    print(f"Save to: {filename}")
     save_geojson(d, filename)
 
 
@@ -22,4 +23,4 @@ if __name__ == "__main__":
     boundary_files = get_csv_as_json("dataset/boundaries.csv")
     for f in boundary_files:
         filename = extract_name_from_document_url(f['documentation-url'])
-        collect_geojson(f['name'], f['resource-url'], filename)
+        collect_geojson(f['name'], f['resource-url'], f"./collection/{filename}.geojson")
