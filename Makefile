@@ -1,5 +1,11 @@
+TARGETS:=\
+	collect/boundaries\
+	collect/regions
+
 init: 
 	pip3 install -r requirements.txt
+
+all: $(TARGETS)
 
 collect/boundaries:
 	python3 collect_boundaries.py

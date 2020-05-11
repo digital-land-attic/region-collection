@@ -4,8 +4,6 @@
 
 Collects the region data available from ONS.
 
-*Currently just collects the boundary data because the region data is collected in the [organisation-dataset](https://github.com/digital-land/organisation-dataset). Will be updated soon.*
-
 # How to use
 
 We recommend working in a [virtual environment](http://docs.python-guide.org/en/latest/dev/virtualenvs/) before installing the python dependencies:
@@ -14,7 +12,11 @@ We recommend working in a [virtual environment](http://docs.python-guide.org/en/
 
 To update the collection, run:
 
-    $ make collect/boundaries
+    $ make all
+
+# Used by
+
+Digital Land team use the collected data in the [organisation-dataset](https://github.com/digital-land/organisation-dataset)
 
 # Licence
 
