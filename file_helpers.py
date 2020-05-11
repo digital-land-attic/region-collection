@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import os
 import csv
 import json
 import requests
@@ -39,6 +40,11 @@ def update_dict(d, k, val):
 
 # write json to csv file
 def json_to_csv_file(output_file, data):
+
+    # check dirs exist first
+    dirs = os.path.dirname(output_file)
+    if not os.path.exists(dirs):
+        os.makedirs(dirs)
 
     print(f"Write data to {output_file}")
     # now we will open a file for writing
