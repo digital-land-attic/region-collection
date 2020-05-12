@@ -18,6 +18,18 @@ To update the collection, run:
 
 Digital Land team use the collected data in the [organisation-dataset](https://github.com/digital-land/organisation-dataset)
 
+# Boundary types
+
+ONS publishes boundaries at different resolutions. The collector collects the 4 available.
+
+|Type|Description|
+|---|---|
+|BFC|Full resolution - clipped to the coastline|
+|BFE|Full resolution - extent of the realm (usually this is the Mean Low Water mark but in some cases boundaries extend beyond this to include off shore islands)|
+|BGC|Generalised (20m) - clipped to the coastline|
+|BUC|Ultra Genralised (500m) - clipped to the coastline|
+
+
 # Licence
 
 The software in this project is open source and covered by LICENSE file.
