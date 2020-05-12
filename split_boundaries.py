@@ -22,7 +22,7 @@ def extract_name_from_document_url(url):
 
 
 def make_boundary_url(stat_geo, typ):
-    return f'https://raw.githubusercontent.com/digital-land/region-collection/master/collection/{typ}/{stat_geo}/index.geojson'
+    return f'https://raw.githubusercontent.com/digital-land/region-collection/master/collection/{stat_geo}/{typ}.geojson'
 
 
 def split_boundaries(path, boundary_type):
@@ -35,10 +35,10 @@ def split_boundaries(path, boundary_type):
         boundary_index.setdefault(k, {})
         boundary_index[k][boundary_type] = make_boundary_url(k, boundary_type)
 
-        boundary_path = f"./collection/{boundary_type}/{k}"
+        boundary_path = f"./collection/{k}"
         os.makedirs(boundary_path, exist_ok=True)
-        print(f"Saving boundary for {k} to {boundary_path}")
-        save_geojson(data, f'{boundary_path}/index.geojson')
+        print(f"Saving boundary for {k} to {boundary_path}/{boundary_type}.geojson")
+        save_geojson(data, f'{boundary_path}/{boundary_type}.geojson')
 
 
 if __name__ == "__main__":
