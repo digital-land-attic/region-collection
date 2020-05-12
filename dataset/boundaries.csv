@@ -1,3 +1,5 @@
 name,documentation-url,resource-url,type,start-date,end-date
-Regions (December 2019) Boundaries EN BFE,https://geoportal.statistics.gov.uk/datasets/regions-december-2019-boundaries-en-bfe,https://opendata.arcgis.com/datasets/4b32e115770a4f46a35034a93acad4fd_0.geojson,region/full,2020-04-01,
+Regions (December 2019) Boundaries EN BFC,https://geoportal.statistics.gov.uk/datasets/regions-december-2019-boundaries-en-bfc,https://opendata.arcgis.com/datasets/324a9f3ad2cc4a049e913dddc508aeb2_0.geojson,region/full-clipped,2020-04-01,
+Regions (December 2019) Boundaries EN BFE,https://geoportal.statistics.gov.uk/datasets/regions-december-2019-boundaries-en-bfe,https://opendata.arcgis.com/datasets/4b32e115770a4f46a35034a93acad4fd_0.geojson,region/full-extent,2020-04-01,
 Regions (December 2019) Boundaries EN BUC,https://geoportal.statistics.gov.uk/datasets/regions-december-2019-boundaries-en-buc,https://opendata.arcgis.com/datasets/15f49f9c99ae4a16a6a5134258749b8a_0.geojson,region/ultra-generalised,2020-04-01,
+Regions (December 2019) Boundaries EN BGC,https://geoportal.statistics.gov.uk/datasets/regions-december-2019-boundaries-en-bgc,https://opendata.arcgis.com/datasets/bcd09dc6a37348a6aff55caa6efd644e_0.geojson,region/generalised,2020-04-01,
